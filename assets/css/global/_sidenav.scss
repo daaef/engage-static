@@ -1,0 +1,67 @@
+.sidenav{
+  .little1{
+    display: flex;
+    padding-left: 31.250px;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 70px;
+    transform: translateY(-100%);
+    background: #AAAAAA;
+    svg{
+      path{
+        fill: #e5e5e5;
+      }
+    }
+  }
+  ul{
+    width: 100%;
+  }
+  width: 100px;
+  display: flex;
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  background: #AAAAAA;
+  justify-content: center;
+  li{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 9px;
+    svg{
+      path,circle{
+        fill: #1D1D1D;
+        transition: .4s;
+      }
+    }
+    p{
+      color: #1D1D1D;
+      font-size: 14px;
+    }
+    &.active, &:hover{
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 9px;
+        background: #F8A900;
+      }
+      background: #222121;
+      svg{
+        path,circle{
+          fill: #e5e5e5;
+          transition: .4s;
+        }
+      }
+      p{
+        color: #e5e5e5;
+      }
+    }
+  }
+}
